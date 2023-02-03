@@ -1,5 +1,5 @@
 :root {
-    --bg-color: rgb(39, 39, 39);
+    --bg-color: rgb(40, 40, 40);
     --text-color: rgb(220, 255, 212);
     --read: limegreen;
     --unread: red;
@@ -200,7 +200,7 @@ input[type=checkbox]{
     top: calc(50% - 12rem);
     left: calc(50% - 10rem);
     scale: 1.5;
-    background-color: rgb(39, 39, 39);
+    background-color: var(--bg-color);
     z-index: 1;
     transform-style: preserve-3d;
 }
@@ -213,7 +213,7 @@ input[type=checkbox]{
     left: -50vw;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(75, 75, 75, 0.452);
+    background-color: rgba(40, 40, 40, 0.8);
     z-index: -1;
     transform: translateZ(-1px);
 }
