@@ -75,10 +75,7 @@ function addNewBook() {
     toggleLabel.appendChild(toggleSpan);
 
     toggleLabel.addEventListener('change', () => {
-        
             book.classList.toggle('bookRead');
-      
-        console.log(book.classList)
     })
 
     const readText = document.createElement('span');
@@ -108,11 +105,10 @@ function addNewBook() {
     editIcon.classList = 'fa-solid fa-check';
     editButton.appendChild(editIcon);
 
-    myLibrary.push(book)
-    console.log(myLibrary);
+    myLibrary.push(book);
 
     editButton.addEventListener('click', () => {
-       if (author.value === '' || title.valaue === '' || pages.value === '') {
+       if (author.value === '' || title.value === '' || pages.value === '') {
         alert('Please fill out all information');
        } else {
         book.classList.toggle('editing');

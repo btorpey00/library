@@ -44,14 +44,20 @@ h1 {
 .book input {
     background-color: var(--bg-color);
     color: var(--text-color);
-    border: 1px solid rgba(58, 58, 58, 0.764);
+    border: none;
     font-size: 1.25rem;
     padding: .25rem;
 }
 
+.editing input {
+    border: 1px groove rgb(50, 50, 50);
+    border-radius: 10px;
+}
+
 .book input:focus {
     outline: none;
-    border: 1px solid rgb(255, 89, 0);
+    border: 1px solid rgb(65, 65, 65);
+    box-shadow: 0px 0px 3px 1px rgb(65, 65, 65);
 }
 
 .book button{
