@@ -199,7 +199,7 @@ input[type=checkbox]{
     position: fixed;
     top: calc(50% - 12rem);
     left: calc(50% - 10rem);
-    scale: 1.5;
+    scale: 1.1;
     background-color: var(--bg-color);
     z-index: 1;
     transform-style: preserve-3d;
@@ -211,8 +211,8 @@ input[type=checkbox]{
     display: block;
     top: -40vh;
     left: -50vw;
-    height: 100vh;
-    width: 100vw;
+    height: 100vmax;
+    width: 100vmax;
     background-color: rgba(40, 40, 40, 0.8);
     z-index: -1;
     transform: translateZ(-1px);
