@@ -74,6 +74,13 @@ function addNewBook() {
     toggleSpan.classList = 'toggle';
     toggleLabel.appendChild(toggleSpan);
 
+    toggleLabel.addEventListener('change', () => {
+        
+            book.classList.toggle('bookRead');
+      
+        console.log(book.classList)
+    })
+
     const readText = document.createElement('span');
     readText.classList = 'toggle-label read-label';
     readText.innerText = 'Read';
@@ -102,12 +109,19 @@ function addNewBook() {
     editButton.appendChild(editIcon);
 
     myLibrary.push(book)
+    console.log(myLibrary);
 
     editButton.addEventListener('click', () => {
-        // console.log('edit' + numBooks);
+       if (author.value === '' || title.valaue === '' || pages.value === '') {
+        alert('Please fill out all information');
+       } else {
         book.classList.toggle('editing');
         editIcon.classList.toggle('fa-check');
         editIcon.classList.toggle('fa-pencil');
-        // console.log(myLibrary[numBooks]);
+        pages.disabled = !pages.disabled;
+        title.disabled = !title.disabled;
+        author.disabled = !author.disabled;
+       }
     });
 };
+
